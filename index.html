@@ -3,116 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tipstree - The ultimate platform for tips, tricks, and expert advice.">
-    <meta name="author" content="Tipstree">
-    <title>Tipstree - Your Source for Expert Advice and Tips</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to external stylesheet -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 50px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-        header p {
-            font-size: 1.2em;
-        }
-        .cta-btn {
-            background-color: #e74c3c;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 5px;
-            margin-top: 20px;
-            display: inline-block;
-        }
-        .cta-btn:hover {
-            background-color: #c0392b;
-        }
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .features {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-        .feature-box {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 250px;
-        }
-        .feature-box h3 {
-            color: #2c3e50;
-        }
-        .footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Tipstree - Your Path to Knowledge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
-        <h1>Welcome to Tipstree</h1>
-        <p>Your ultimate source for expert advice and tips on everything you need to know.</p>
-        <a href="#get-started" class="cta-btn">Get Started</a>
+        <div class="container">
+            <h1 class="logo">Tipstree</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main Content Section -->
-    <section>
-        <h2>Why Tipstree?</h2>
-        <p>We provide you with the best tips, tricks, and expert advice to help you succeed in every area of life.</p>
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Tipstree</h2>
+            <p>Empowering you with insights and knowledge for a brighter future.</p>
+            <a href="#services" class="cta-button">Learn More</a>
+        </div>
+    </section>
 
-        <div class="features">
-            <div class="feature-box">
-                <h3>Expert Advice</h3>
-                <p>Get the latest tips and tricks from professionals in various industries.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Easy to Follow</h3>
-                <p>Our step-by-step guides make it simple for you to follow and apply new knowledge.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Community Support</h3>
-                <p>Join our growing community of learners and experts to share knowledge and grow together.</p>
+    <section id="about" class="light-bg">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Tipstree is an edutech platform offering a wide range of learning solutions to help you grow and succeed.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Online Courses</h3>
+                    <p>Access a variety of courses across different domains tailored to your needs.</p>
+                </div>
+                <div class="card">
+                    <h3>Webinars</h3>
+                    <p>Join live sessions with experts and industry leaders.</p>
+                </div>
+                <div class="card">
+                    <h3>Mentorship</h3>
+                    <p>Get personalized guidance from experienced mentors.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section id="get-started">
-        <h2>Ready to Get Started?</h2>
-        <p>Sign up today and unlock a world of expert tips and advice!</p>
-        <a href="https://www.yoursignupurl.com" class="cta-btn">Sign Up Now</a>
+    <section id="contact" class="light-bg">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have any questions? Reach out to us!</p>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2024 Tipstree. All rights reserved.</p>
-        <p><a href="#" style="color: white;">Privacy Policy</a> | <a href="#" style="color: white;">Terms of Service</a></p>
-    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tipstree. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
